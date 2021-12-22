@@ -21,7 +21,6 @@
     "create-release-branch": "sh ./scripts/create-release-branch.sh",
     "publish-release": "sh ./scripts/publish-release.sh",
     "docs:localdev": "cd docs && yarn install && yarn build && serve -s build",
-    "docs:user-serve": "yarn docs:user && serve -s build",
     "typescript": "tsc --noEmit",
     "dist": "rollup --config rollup.config.js",
     "prepublishOnly": "npm run typescript && npm run dist"

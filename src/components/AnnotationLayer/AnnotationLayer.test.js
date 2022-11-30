@@ -261,7 +261,7 @@ describe("AnnotationLayer", () => {
   it("includes a legend with legendSettings prop", () => { 
     const mockLegendStyleFn = jest.fn()
     const mockClickFn = jest.fn()
-    const { container } = render(
+    render(
       <TooltipProvider>
         <AnnotationLayer
           margin={{ left: 10, right: 10, top: 10, bottom: 10 }}
